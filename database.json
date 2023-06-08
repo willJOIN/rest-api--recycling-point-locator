@@ -1,0 +1,17 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "nome": "Exemplo 1"
+      },
+      {
+        "id": 2,
+        "nome": "Exemplo 2"
+      },
+      {
+        "id": 3,
+        "nome": "Exemplo 3"
+      }
+    ]
+  }
+  
