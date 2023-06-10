@@ -67,12 +67,11 @@ app.post('/api-recicla/cria-ponto', (req, res) => {
             return
         }
         else {
-            res.status(201).json({ error: 'Criado'})
+            res.status(201).json({ message: 'Criado'})
         }
     })
 })
 
-app.use(express.json())
 app.delete('/api-recicla/deleta-ponto', (req, res) => {
     const id = req.query.id
 
@@ -83,7 +82,7 @@ app.delete('/api-recicla/deleta-ponto', (req, res) => {
             return
         }
         else {
-            res.status(200).json({ error: 'Deletado'})
+            res.status(200).json({ message: 'Deletado'})
         }
     })
 })
