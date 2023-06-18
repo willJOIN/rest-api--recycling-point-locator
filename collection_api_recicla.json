@@ -1,105 +1,101 @@
 {
-    "info": {
-        "_postman_id": "77685f3f-8cee-4601-b3a6-b7c76e7f2ddf",
-        "name": "collection_api_recicla",
-        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-        "description": ""
-    },
-    "item": [
+    "client": "Thunder Client",
+    "collectionName": "collection_api_recicla",
+    "dateExported": "2023-06-18T22:34:19.471Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
         {
+            "_id": "7b622f5e-2b72-427e-a0bf-9b0ef8b01687",
+            "colId": "d646cc65-e89a-4b2e-920f-c269e05cda5e",
+            "containerId": "",
             "name": "busca-ponto",
-            "request": {
-                "method": "GET",
-                "url": {
-                    "raw": "http://localhost:3000/api-recicla/busca-ponto?material=papel",
-                    "query": [
-                        {
-                            "key": "material",
-                            "value": "papel"
-                        }
-                    ],
-                    "variable": [],
-                    "path": [
-                        "api-recicla",
-                        "busca-ponto"
-                    ],
-                    "protocol": "http",
-                    "host": [
-                        "localhost"
-                    ],
-                    "port": "3000"
+            "url": "http://localhost:3000/api-recicla/busca-ponto?material=plastico",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-10T02:53:10.825Z",
+            "modified": "2023-06-10T15:08:28.514Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "material",
+                    "value": "plastico",
+                    "isPath": false
                 }
-            }
+            ],
+            "tests": []
         },
         {
+            "_id": "52463232-ad03-47ca-ad15-9c2af18489b5",
+            "colId": "d646cc65-e89a-4b2e-920f-c269e05cda5e",
+            "containerId": "",
             "name": "lista-pontos",
-            "request": {
-                "method": "GET",
-                "url": {
-                    "raw": "http://localhost:3000/api-recicla/lista-pontos",
-                    "path": [
-                        "api-recicla",
-                        "lista-pontos"
-                    ],
-                    "protocol": "http",
-                    "host": [
-                        "localhost"
-                    ],
-                    "port": "3000"
-                }
-            }
+            "url": "http://localhost:3000/api-recicla/lista-pontos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-10T02:53:26.066Z",
+            "modified": "2023-06-10T02:58:14.975Z",
+            "headers": [],
+            "params": [],
+            "tests": []
         },
         {
+            "_id": "ee91245f-1ba7-42ed-94ed-e3292d48d35f",
+            "colId": "d646cc65-e89a-4b2e-920f-c269e05cda5e",
+            "containerId": "",
             "name": "cria-ponto",
-            "request": {
-                "method": "POST",
-                "url": {
-                    "raw": "http://localhost:3000/api-recicla/cria-ponto",
-                    "path": [
-                        "api-recicla",
-                        "cria-ponto"
-                    ],
-                    "protocol": "http",
-                    "host": [
-                        "localhost"
-                    ],
-                    "port": "3000"
-                },
-                "body": {
-                    "mode": "raw",
-                    "options": {
-                        "raw": {
-                            "language": "json"
-                        }
-                    },
-                    "raw": "{\n  \"material\": \"papel\",\n  \"CEP\": \"12345\"\n}"
-                }
-            }
+            "url": "http://localhost:3000/api-recicla/cria-ponto",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-10T02:53:35.418Z",
+            "modified": "2023-06-10T03:07:17.359Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"material\": \"papel\",\n  \"CEP\": \"12345\"\n}",
+                "form": []
+            },
+            "tests": []
         },
         {
+            "_id": "2aad4230-0e2b-4fc6-8e53-7c69eff2ace0",
+            "colId": "d646cc65-e89a-4b2e-920f-c269e05cda5e",
+            "containerId": "",
             "name": "deleta-ponto",
-            "request": {
-                "method": "DELETE",
-                "url": {
-                    "raw": "http://localhost:3000/api-recicla/deleta-ponto?id=1",
-                    "query": [
-                        {
-                            "key": "id",
-                            "value": "1"
-                        }
-                    ],
-                    "variable": [],
-                    "path": [
-                        "api-recicla",
-                        "deleta-ponto"
-                    ],
-                    "protocol": "http",
-                    "host": [
-                        "localhost"
-                    ],
-                    "port": "3000"
+            "url": "http://localhost:3000/api-recicla/deleta-ponto?id=2",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-06-10T02:53:43.996Z",
+            "modified": "2023-06-10T15:08:43.687Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "2",
+                    "isPath": false
                 }
-            }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "2056e7b2-abd4-49f8-8438-8af538f551bb",
+            "colId": "d646cc65-e89a-4b2e-920f-c269e05cda5e",
+            "containerId": "",
+            "name": "busca-cep-ponto",
+            "url": "http://localhost:3000/api-recicla/busca-cep-ponto",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-06-18T22:27:38.074Z",
+            "modified": "2023-06-18T22:34:11.725Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"CEP\": \"01001000\"\n}",
+                "form": []
+            },
+            "tests": []
         }
     ]
 }
